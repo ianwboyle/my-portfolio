@@ -31,10 +31,13 @@ const About = () => {
           <h2 className={style.genericText}>{`My Vision`}</h2>
           <p className={style.taglineText}>{"// Radical Technology & Innovative Design "}</p>
           <p className={style.genericText}>
-            {`My passion is rooted in onboarding digital citizens into the wild & wonderful world of Web3. A positive user experience (UX) and high-quality, user-friendly UI (user interface) play essential roles in the success rate of onboarding Web3 users. `}
+            {`I am passionate about onboarding the next wave of digital citizens into the wild & wonderful world of Web3! `}
           </p>
           <p className={style.genericText}>
-            {`I possess the tools needed to create cross-chain interoperable dApps. I can future-proof all of your dApps, and you can deploy them using the same code on all supported blockchains. I design, build, and maintain efficient, reusable, and reliable code.`}
+            {`I build cross-chain dApps that generate a positive User Experience (UX), and produce a high-quality User Interface (UI), coupled with Smart Contracts, the immutable code deployed to a Blockchain.`}
+          </p>
+          <p className={style.genericText}>
+            {` I design, build, and maintain efficient, reusable, and reliable code. My code is supported on all Blockchains using the Ethereum protocol.`}
           </p>
           <p className={style.genericText}>
             {`Exploring NFTs, DAOs, Crypto & The Metaverse.`}
