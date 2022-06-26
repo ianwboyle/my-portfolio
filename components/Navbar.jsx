@@ -15,7 +15,7 @@ const style = {
   navbarLinkContainer: 'hidden md:flex',
   navbarLink: 'ml-10 text-xl uppercase hover:text-[#12181B]',
   menuOpenIcon:'md:hidden',
-  menuCloseIcon: 'rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer',
+  menuCloseIcon: 'rounded-full p-3',
   navMenuHeaderContainer: 'flex w-full items-center justify-between',
   navMenuTaglineContainer: 'border-b border-gray-300 my-4',
   navMenuTagline: 'w-[85%] md:w-[90%] py-4',
