@@ -1,7 +1,7 @@
 module.exports = {
   TrailingSlash: true,
   images: {
-    loader: 'akamai',
+    loader: 'imgix',
     path: '',
   },
   exportPathMap: function() {
