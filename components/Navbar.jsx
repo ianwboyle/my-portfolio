@@ -35,7 +35,7 @@ const style = {
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#FFF');
+  const [navBg, setNavBg] = useState('#F8F8F8');
   const [linkColor, setLinkColor] = useState('#454E56');
   const router = useRouter();
 
@@ -47,9 +47,9 @@ const Navbar = () => {
       router.asPath === '/twitch'
     ) {
       setNavBg('transparent');
-      setLinkColor('#FFF');
+      setLinkColor('#F8F8F8');
     } else {
-      setNavBg('#FFF');
+      setNavBg('#F8F8F8');
       setLinkColor('#454E56');
     }
   }, [router]);
