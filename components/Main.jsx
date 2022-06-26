@@ -25,7 +25,7 @@ const Main = () => {
       <div className={style.mainContainer}>
         <div>
           <p className={style.taglineText}>
-            {`Let's build something together.`}
+            {`Web1 was read-only, Web2 is read-write, Web3 is read-write-own`}
           </p>
           <h1 className={style.headerText}>
             {`Hi, I'm `}<span className={style.spanText}>{`Ian`}</span>

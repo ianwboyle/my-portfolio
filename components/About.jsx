@@ -1,12 +1,24 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import Avatar from '../public/assets/avatar.png'
+
+const style = {
+  aboutWrapper: 'w-full md:h-screen p-2 flex items-center py-16',
+  aboutContainer: 'max-w-[1240px] m-auto flex flex-col xl:flex-row gap-8',
+  aboutHeader: 'uppercase text-xl tracking-widest text-[#8A2BE2]',
+  avatarImgContainer: 'w-auto h-auto m-auto rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300',
+  infoContainer: 'col-span-2 xl:w-full',
+  projectLink: 'py-2 text-gray-600 underline cursor-pointer',
+  genericText: 'py-2',
+  taglineText: 'py-2 uppercase',
+}
 
 const About = () => {
   return (
-    <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
-      <div className='max-w-[1240px] m-auto flex flex-col xl:flex-row gap-8'>
-        <div className='w-auto h-auto m-auto rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
+    <div id='about' className={style.aboutWrapper}>
+      <div className={style.aboutContainer}>
+        <div className={style.avatarImgContainer}>
           <Image 
             src={Avatar} 
             alt='/' 
@@ -14,17 +26,22 @@ const About = () => {
             height={500} 
           />
         </div>
-        <div className='col-span-2 xl:w-full'>
-          <p className='uppercase text-xl tracking-widest text-[#8A2BE2]'>{`About`}</p>
-          <h2 className='py-2 text-gray-600'>{`Who I Am`}</h2>
-          <p className='py-2 text-gray-600'>{"// I am a Blockchain Developer"}</p>
-          <p className='py-2 text-gray-600'>
-            {`Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem non maiores velit nam ratione placeat excepturi quia fugiat eveniet. Ducimus quaerat adipisci, reiciendis esse, eos eius quos, ipsam omnis repudiandae nesciunt itaque explicabo neque incidunt illo laborum voluptate? Quasi error similique optio consequatur repudiandae eius natus officiis minima quidem reprehenderit.`}
+        <div className={style.infoContainer}>
+          <p className={style.aboutHeader}>{`About`}</p>
+          <h2 className={style.genericText}>{`My Vision`}</h2>
+          <p className={style.taglineText}>{"// Radical Technology & Innovative Design "}</p>
+          <p className={style.genericText}>
+            {`My passion is rooted in onboarding digital citizens into the wild & wonderful world of Web3. A positive user experience (UX) and high-quality, user-friendly UI (user interface) play essential roles in the success rate of onboarding Web3 users. `}
           </p>
-          <p className='py-2 text-gray-600'>
-            {`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero veniam, facere repellendus fugiat modi excepturi fugit voluptates dolores commodi pariatur nesciunt quos adipisci amet eos voluptatum ratione ipsa cum unde voluptatem corporis vel minima! Velit in veniam, vero consequatur, sequi laboriosam numquam beatae, eum doloribus non iste molestiae! Molestiae, facere?`}
+          <p className={style.genericText}>
+            {`I possess the tools needed to create cross-chain interoperable dApps. I can future-proof all of your dApps, and you can deploy them using the same code on all supported blockchains. I design, build, and maintain efficient, reusable, and reliable code.`}
           </p>
-          <p className='py-2 text-gray-600 underline cursor-pointer'>{`Check out some of my latest projects.`}</p>
+          <p className={style.genericText}>
+            {`Exploring NFTs, DAOs, Crypto & The Metaverse.`}
+          </p>
+          <Link href='/#projects'>
+            <p className={style.projectLink}>{`Check out some of my latest projects.`}</p>
+          </Link>
         </div>
       </div>
     </div>
