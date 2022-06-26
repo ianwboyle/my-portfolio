@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
+
+  html {
+    font-family: 'Overpass';
+  }
+
   html {
     @apply scroll-smooth
   }
@@ -12,7 +21,7 @@
   }
 
   p {
-    @apply font-semibold
+    @apply font-semibold text-[#454E56]
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -28,7 +37,7 @@
   }
 
   li {
-    @apply cursor-pointer font-semibold
+    @apply cursor-pointer font-semibold 
   }
 
   button {

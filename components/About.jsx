@@ -1,12 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
+import Avatar from '../public/assets/avatar.png'
 
 const About = () => {
   return (
     <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
       <div className='max-w-[1240px] m-auto flex flex-col xl:flex-row gap-8'>
         <div className='w-auto h-auto m-auto rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-          <Image src='/../public/assets/avatar.png' alt='/' width={500} height={500} />
+          <Image 
+            src={Avatar} 
+            alt='/' 
+            width={500} 
+            height={500} 
+          />
         </div>
         <div className='col-span-2 xl:w-full'>
           <p className='uppercase text-xl tracking-widest text-[#8A2BE2]'>{`About`}</p>

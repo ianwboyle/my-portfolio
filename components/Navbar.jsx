@@ -1,17 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { BsTwitter } from 'react-icons/bs'
+import { SiUpwork } from 'react-icons/si'
 import { useRouter } from 'next/router';
+import { GrMail } from 'react-icons/gr'
 import navLogo from '../public/assets/navLogo.png';
 
 const style = {
   logoImg: 'hover:cursor-pointer',
   navbarContainer: 'flex justify-between items-center w-full h-full px-2 2xl:px-16',
   navbarLinkContainer: 'hidden md:flex',
-  navbarLink: 'ml-10 text-xl uppercase hover:text-[#8A2BE2]',
+  navbarLink: 'ml-10 text-xl uppercase hover:text-[#12181B]',
   menuOpenIcon:'md:hidden',
   menuCloseIcon: 'rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer',
   navMenuHeaderContainer: 'flex w-full items-center justify-between',
@@ -19,18 +21,22 @@ const style = {
   navMenuTagline: 'w-[85%] md:w-[90%] py-4',
   navMenuLinkContainer: 'py-4 flex flex-col',
   navMenuLinkList: 'uppercase',
-  navMenuLink: 'py-4 text-xl',
+  navMenuLink: 'py-4 text-xl ',
   socialsMainContainer: 'pt-40',
-  socialsHeader: 'text-xl uppercase tracking-widest text-[#8A2BE2]',
-  socialsIconContainer: 'flex items-center justify-between my-4 w-full sm:w-[80%]',
-  socialsIcon:'rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300',
+  socialsHeader: 'text-xl uppercase tracking-widest text-center text-[#12181B]',
+  socialsIconContainer: 'flex items-center justify-evenly my-4 w-full sm:w-[80%]',
+  socialsIcon:'rounded-full p-3',
+  linkedIn: 'text-[#0072B1]',
+  twitter: 'text-[#00ACEE]',
+  mail: 'text-[#8A2BE2]',
+  upWork: 'text-[#2BE22E]',
 }
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('#1f2937');
+  const [navBg, setNavBg] = useState('#FFF');
+  const [linkColor, setLinkColor] = useState('#454E56');
   const router = useRouter();
 
   useEffect(() => {
@@ -41,10 +47,10 @@ const Navbar = () => {
       router.asPath === '/twitch'
     ) {
       setNavBg('transparent');
-      setLinkColor('#ecf0f3');
+      setLinkColor('#FFF');
     } else {
-      setNavBg('#ecf0f3');
-      setLinkColor('#1f2937');
+      setNavBg('#FFF');
+      setLinkColor('#454E56');
     }
   }, [router]);
 
@@ -119,7 +125,7 @@ const Navbar = () => {
       {/* Side Drawer Menu */}
       <div className={
         nav 
-          ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ECF0F3] p-10 ease-in duration-500' 
+          ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#FFF] p-10 ease-in duration-500' 
           : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
         }
       >
@@ -128,7 +134,7 @@ const Navbar = () => {
             <Link href='/'>
               <Image 
                 onClick={toggleNav}
-                src='/../public/assets/navLogo.png' 
+                src={navLogo}
                 alt='/' 
                 width={50} 
                 height={50}
@@ -162,17 +168,30 @@ const Navbar = () => {
                 {`Let's Connect`}
               </p>
               <div className={style.socialsIconContainer}>
-                <div className={style.socialsIcon}>
-                  <FaLinkedinIn size={25}/>
+                <div className={`${style.linkedIn} ${style.socialsIcon}`}>
+                  <a href='https://www.linkedin.com/in/iwboyle' target='_blank' rel="noopener noreferrer">
+                    <FaLinkedinIn size={25}/>
+                  </a>
                 </div> 
                 <div className={style.socialsIcon}>
-                  <FaGithub size={25}/>
+                  <a href='https://github.com/ianboyle' target='_blank' rel="noopener noreferrer">
+                    <FaGithub size={25}/>
+                  </a>
                 </div> 
-                <div className={style.socialsIcon}>
-                  <AiOutlineMail size={25}/>
+                <div className={`${style.twitter} ${style.socialsIcon}`}>
+                  <a href='https://twitter.com/ianwboyle' target='_blank' rel="noopener noreferrer">
+                    <BsTwitter size={25}/>
+                  </a>
                 </div> 
-                <div className={style.socialsIcon}>
-                  <BsFillPersonLinesFill size={25}/>
+                <div className={`${style.mail} ${style.socialsIcon}`}>
+                  <a href='mailto:ianwboyle@proton.me' target='_blank' rel="noopener noreferrer">
+                    <GrMail size={25}/>
+                  </a>
+                </div> 
+                <div className={`${style.upWork} ${style.socialsIcon}`}>
+                  <a href='https://www.upwork.com/freelancers/~01b0976c466a0e0363?viewMode=1' target='_blank' rel="noopener noreferrer">
+                    <SiUpwork size={25}/>
+                  </a>
                 </div> 
               </div>
             </div>
