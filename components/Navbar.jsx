@@ -5,6 +5,7 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { useRouter } from 'next/router';
+import navLogo from '../../public/assets/navLogo.png';
 
 const style = {
   logoImg: 'hover:cursor-pointer',
@@ -75,7 +76,7 @@ const Navbar = () => {
         <Link href='/'>
           <Image
             className={style.logoImg} 
-            src="/../public/assets/navLogo.png" 
+            src={navLogo} 
             alt="/" 
             width={50} 
             height={50} 
