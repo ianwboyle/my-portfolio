@@ -12,7 +12,7 @@ import navLogo from '../public/assets/navLogo.png';
 
 const style = {
   logoImg: 'hover:cursor-pointer',
-  navbarContainer: 'flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#FFF] dark:bg-[#2A2E35]',
+  navbarContainer: 'flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#FFF] dark:bg-[#2A2E35] ease-in duration-300',
   navbarLinkContainer: 'hidden md:flex  ',
   navbarLink: 'ml-10 text-xl uppercase text-[#454E56] hover:cursor-pointer hover:text-[#12181B] dark:text-[#B2BECD] dark:hover:text-[#F8F8F8]',
   menuOpenIcon:'md:hidden flex items-center justify-center',
