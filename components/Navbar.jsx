@@ -22,7 +22,7 @@ const style = {
   navMenuLinkContainer: 'py-4 flex flex-col',
   navMenuLinkList: 'uppercase',
   navMenuLink: 'py-4 text-xl ',
-  socialsMainContainer: 'pt-40',
+  socialsMainContainer: 'pt-20',
   socialsHeader: 'text-xl uppercase tracking-widest text-center text-[#12181B]',
   socialsIconContainer: 'flex items-center justify-evenly my-4 w-full sm:w-[80%]',
   socialsIcon:'rounded-full p-3',

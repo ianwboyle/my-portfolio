@@ -21,7 +21,8 @@ const style = {
   mail: 'text-[#8A2BE2]',
   upWork: 'text-[#2BE22E]',
   hostedContainer: 'flex flex-col items-center justify-center',
-  hosted: 'flex flex-col w-[150px] h-[100px] justify-center items-center'
+  hosted: 'flex flex-col w-[150px] h-[100px] justify-center items-center',
+  hostedText: 'text-xs text-center',
 }
 
 const Main = () => {
@@ -68,7 +69,7 @@ const Main = () => {
         </div>
         <div className={style.hostedContainer}>
             <div className={style.hosted}>
-              <p>Deployed with Fleek</p>
+              <p className={style.hostedText}>{`Deployed with Fleek`}</p>
               <Image
                 src={FleekImg}
                 width={25}
