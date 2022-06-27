@@ -15,6 +15,10 @@
   --gray6: #12181B;
 }
 
+.dark {
+
+}
+
 @layer base {
 
   html {
@@ -26,15 +30,15 @@
   }
 
   body {
-    @apply bg-[#DBE1E8] selection:bg-[#8A2BE2] selection:text-[#F8F8F8]
+    @apply bg-[#DBE1E8] selection:bg-[#8A2BE2] selection:text-[#F8F8F8] dark:bg-[#12181B] 
   }
 
   p {
-    @apply font-semibold text-[#454E56]
+    @apply font-semibold text-[#454E56] dark:text-[#B2BECD]
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold text-[#12181B]
+    @apply font-bold text-[#12181B] dark:text-[#F8F8F8]
   }
 
   h1 {

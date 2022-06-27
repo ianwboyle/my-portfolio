@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTheme } from 'next-themes'
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { BsTwitter } from 'react-icons/bs'
+import { FaGithub, FaLinkedinIn, FaSun } from 'react-icons/fa'
+import { BsTwitter, BsMoonStarsFill } from 'react-icons/bs'
 import { SiUpwork } from 'react-icons/si'
 import { useRouter } from 'next/router';
 import { GrMail } from 'react-icons/gr'
@@ -14,7 +15,7 @@ const style = {
   navbarContainer: 'flex justify-between items-center w-full h-full px-2 2xl:px-16',
   navbarLinkContainer: 'hidden md:flex',
   navbarLink: 'ml-10 text-xl uppercase hover:text-[#12181B]',
-  menuOpenIcon:'md:hidden',
+  menuOpenIcon:'md:hidden flex items-center justify-center',
   menuCloseIcon: 'rounded-full p-3',
   navMenuHeaderContainer: 'flex w-full items-center justify-between',
   navMenuTaglineContainer: 'border-b border-gray-300 my-4',
@@ -39,6 +40,29 @@ const Navbar = () => {
   const [navBg, setNavBg] = useState('#F8F8F8');
   const [linkColor, setLinkColor] = useState('#454E56');
   const router = useRouter();
+  const {systemTheme, theme, setTheme} = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, [])
+
+  const renderThemeChanger = () => {
+    if (!mounted) return null;
+
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+
+  if (currentTheme === 'dark') {
+    return (
+      <FaSun className='w-6 h-6' role='button' onClick={() => setTheme('light')} />
+    )
+  }
+  else {
+    return (
+      <BsMoonStarsFill className='w-6 h-6' role='button' onClick={() => setTheme('dark')} />
+      )
+    }
+  }
 
   useEffect(() => {
     if (
@@ -75,8 +99,8 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
-          : 'fixed w-full h-20 z-[100]'
+          ? 'fixed w-full h-14 md:h-20 shadow-xl z-[100] ease-in-out duration-300'
+          : 'fixed w-full h-14 md:h-20 z-[100]'
       }
     >
       <div className={style.navbarContainer}>
@@ -89,21 +113,26 @@ const Navbar = () => {
             height={50} 
           />
         </Link>
-        <div>
-          <ul style={{ color: `${linkColor}` }} className={style.navbarLinkContainer}>
-            <Link href='/'>
-              <li className={style.navbarLink}>{`Home`}</li>
-            </Link>
-            <Link href='#about'>
-              <li className={style.navbarLink}>{`About`}</li>
-            </Link>
-            <Link href='#skills'>
-              <li className={style.navbarLink}>{`Skills`}</li>
-            </Link>
-            <Link href='#projects'>
-              <li className={style.navbarLink}>{`Projects`}</li>
-            </Link>
-          </ul>
+        <div className='flex flex-row'>
+          <div className='flex items-center p-8 md:p-0 justify-center text-[#454E56] hover:cursor-pointer hover:text-[#12181B]'>
+              {renderThemeChanger()}
+          </div>
+          <div>
+            <ul style={{ color: `${linkColor}` }} className={style.navbarLinkContainer}>
+              <Link href='/'>
+                <li className={style.navbarLink}>{`Home`}</li>
+              </Link>
+              <Link href='#about'>
+                <li className={style.navbarLink}>{`About`}</li>
+              </Link>
+              <Link href='#skills'>
+                <li className={style.navbarLink}>{`Skills`}</li>
+              </Link>
+              <Link href='#projects'>
+                <li className={style.navbarLink}>{`Projects`}</li>
+              </Link>
+            </ul>
+          </div>
           <div 
             style={{ color: `${linkColor}` }}
             onClick={toggleNav} 
@@ -126,7 +155,7 @@ const Navbar = () => {
       {/* Side Drawer Menu */}
       <div className={
         nav 
-          ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#FFF] p-10 ease-in duration-500' 
+          ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#FFF] dark:bg-[#2A2E35] p-10 ease-in duration-500' 
           : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
         }
       >
