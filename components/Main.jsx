@@ -6,8 +6,6 @@ import { SiUpwork } from 'react-icons/si'
 import { GrMail } from 'react-icons/gr'
 import FleekImg from '../public/assets/skills/fleek.png'
 
-
-
 const style = {
   mainWrapper: 'w-full h-screen text-center',
   mainContainer: 'max-w-[1240px] w-full h-full mx-auto p-2 pt-20 flex flex-col justify-center items-center',

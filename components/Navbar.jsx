@@ -26,6 +26,7 @@ const style = {
   socialsHeader: 'text-xl uppercase tracking-widest text-center text-[#12181B]',
   socialsIconContainer: 'flex items-center justify-evenly my-4 w-full sm:w-[80%]',
   socialsIcon:'rounded-full p-3',
+  gitHub: 'text-[#1218B],',
   linkedIn: 'text-[#0072B1]',
   twitter: 'text-[#00ACEE]',
   mail: 'text-[#8A2BE2]',
@@ -173,7 +174,7 @@ const Navbar = () => {
                     <FaLinkedinIn size={25}/>
                   </a>
                 </div> 
-                <div className={style.socialsIcon}>
+                <div className={`${style.gitHub} ${style.socialsIcon}`}>
                   <a href='https://github.com/ianboyle' target='_blank' rel="noopener noreferrer">
                     <FaGithub size={25}/>
                   </a>

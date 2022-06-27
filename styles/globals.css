@@ -5,6 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
+::root {
+  --gray0: #F8F8F8;
+  --gray1: #DBE1E8;
+  --gray2: #B2BECD;
+  --gray3: #6C7983;
+  --gray4: #454E56;
+  --gray5: #2A2E35;
+  --gray6: #12181B;
+}
 
 @layer base {
 
