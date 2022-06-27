@@ -54,12 +54,12 @@ const Navbar = () => {
 
   if (currentTheme === 'dark') {
     return (
-      <FaSun className='w-6 h-6' role='button' onClick={() => setTheme('light')} />
+      <FaSun className='w-[25px] h-[25px]' role='button' onClick={() => setTheme('light')} />
     )
   }
   else {
     return (
-      <BsMoonStarsFill className='w-6 h-6' role='button' onClick={() => setTheme('dark')} />
+      <BsMoonStarsFill className='w-[25px] h-[25px]' role='button' onClick={() => setTheme('dark')} />
       )
     }
   }

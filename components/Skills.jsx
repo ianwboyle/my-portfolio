@@ -18,12 +18,13 @@ import RadicleImg from '../public/assets/skills/radicle.png'
 
 const style = {
   skillsWrapper: 'w-full md:h-screen p-2 flex items-center py-16',
-  skillsContainer: 'max-w-[1240px] mx-auto flex flex-col justify-center h-full',
+  skillsContainer: 'max-w-[1240px] mx-auto flex flex-col justify-center h-full p-4',
   skillsList: 'grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8',
-  header: 'text-xl tracking-widest uppercase text-[#8A2BE2]',
-  subheader: 'py-4',
-  skillItemWrapper: 'p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300',
-  skillItemContainer: 'grid grid-cols-2 gap-4 justify-center items-center',
+  headerContainer: 'py-4',
+  header: 'text-xl py-2 tracking-widest uppercase text-[#8A2BE2] dark:text-[#8A2BE2]',
+  subheader: 'p-2',
+  skillItemWrapper: 'p-4 shadow-xl rounded-md hover:scale-105 ease-in duration-300 dark:bg-[#2A2E35]',
+  skillItemContainer: 'grid grid-row-2 gap-2 sm:grid-cols-2 md:gap-8 justify-center items-center',
   skillImgContainer: 'm-auto',
   skillTitle: 'flex flex-col items-center justify-center',
 }
@@ -32,8 +33,10 @@ const Skills = () => {
   return (
     <div id='skills' className={style.skillsWrapper}>
       <div className={style.skillsContainer}>
-        <p className={style.header}>{`Skills`}</p>
-        <h2 className={style.subHeader}>{`Blockchain Stack`}</h2>
+        <div className={style.headerContainer}>
+          <p className={style.header}>{`Skills`}</p>
+          <h2 className={style.subHeader}>{`Blockchain Stack`}</h2>
+        </div>
         <div className={style.skillsList}>
           <a href='https://solidity.readthedocs.io/en/v0.7.0/' target='_blank' rel='noopener noreferrer'>
             <div className={style.skillItemWrapper}>

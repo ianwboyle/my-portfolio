@@ -6,11 +6,11 @@ import Avatar from '../public/assets/avatar.png'
 const style = {
   aboutWrapper: 'w-full md:h-screen p-2 flex items-center py-16',
   aboutContainer: 'max-w-[1240px] m-auto flex flex-col xl:flex-row gap-8',
-  aboutHeader: 'uppercase text-xl tracking-widest text-[#8A2BE2]',
+  aboutHeader: 'uppercase text-xl tracking-widest text-[#8A2BE2] dark:text-[#8A2BE2]',
   avatarImgContainer: 'w-auto h-auto m-auto rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300',
-  infoContainer: 'col-span-2 xl:w-full',
+  infoContainer: 'col-span-2 xl:w-full p-4',
   taglineText: 'uppercase text-sm tracking-widest text-gray-600 py-2',
-  projectLink: 'py-2 text-[#2BA3E2] underline cursor-pointer',
+  projectLink: 'py-2 text-[#2BA3E2] dark:text-[#2BA3E2] underline cursor-pointer',
   genericText: 'py-2',
   taglineText: 'py-2 uppercase',
 }
