@@ -9,7 +9,8 @@ const style = {
   aboutHeader: 'uppercase text-xl tracking-widest text-[#8A2BE2]',
   avatarImgContainer: 'w-auto h-auto m-auto rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300',
   infoContainer: 'col-span-2 xl:w-full',
-  projectLink: 'py-2 text-gray-600 underline cursor-pointer',
+  taglineText: 'uppercase text-sm tracking-widest text-gray-600 py-2',
+  projectLink: 'py-2 text-[#2BA3E2] underline cursor-pointer',
   genericText: 'py-2',
   taglineText: 'py-2 uppercase',
 }
@@ -31,16 +32,19 @@ const About = () => {
           <h2 className={style.genericText}>{`My Vision`}</h2>
           <p className={style.taglineText}>{"// Radical Technology & Innovative Design "}</p>
           <p className={style.genericText}>
-            {`I am passionate about onboarding the next wave of digital citizens into the wild & wonderful world of Web3! `}
+            {`Dedicated to onboarding the next wave of digital citizens into the wild & wonderful world of Web3!`}
           </p>
           <p className={style.genericText}>
-            {`I build cross-chain dApps that generate a positive User Experience (UX), and produce a high-quality User Interface (UI), coupled with Smart Contracts, the immutable code deployed to a Blockchain.`}
+            {`I believe smart contracts are set for mass adoption. They will soon be far more mainstream as people increasingly understand and gain confidence in blockchain technology.`}
+          </p> 
+          <p className={style.genericText}>
+            {`My goal is to build cross-chain dApps that generate a positive User Experience (UX), and produce a high-quality User Interface (UI), combined  smart contracts and blockchain technology.`}
           </p>
           <p className={style.genericText}>
-            {` I design, build, and maintain efficient, reusable, and reliable code. My code is supported on all Blockchains using the Ethereum protocol.`}
+            {` I design, build, and maintain efficient, reusable, and reliable code, which is supported on all Blockchains using the Ethereum protocol.`}
           </p>
-          <p className={style.genericText}>
-            {`Exploring NFTs, DAOs, Crypto & The Metaverse.`}
+          <p className={style.taglineText}>
+            {`Web1 was read-only // Web2 is read-write // Web3 shall be read-write-own`}
           </p>
           <Link href='/#projects'>
             <p className={style.projectLink}>{`Check out some of my latest projects.`}</p>

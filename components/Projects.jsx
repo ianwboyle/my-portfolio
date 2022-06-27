@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
+import LoadingImg from '../public/assets/projects/loading.jpg'
 
 
 
@@ -11,35 +12,20 @@ const Projects = () => {
           {`Projects`}
         </p>
         <h2 className='py-4'>
-          {`What I've Built`}
+          {`Building & Tinkering`}
         </h2>
         <div className='grid md:grid-cols-2 gap-8'>
-        <ProjectItem
-            title='Property Finder'
-            backgroundImg='/../public/assets/projects/property.jpg'
-            projectUrl='/property'
-            tech='React JS'
+          <ProjectItem
+            title='Project X'
+            backgroundImg={LoadingImg}
+            projectUrl='/#projects'
+            description='Loading...'
           />
           <ProjectItem
-            title='Crypto App'
-            backgroundImg='/../public/assets/projects/crypto.jpg'
-            projectUrl='/crypto'
-            tech='React JS'
-
-          />
-          <ProjectItem
-            title='Netflix App'
-            backgroundImg='/../public/assets/projects/netflix.jpg'
-            projectUrl='/netflix'
-            tech='React JS'
-
-          />
-          <ProjectItem
-            title='Twitch UI'
-            backgroundImg='/../public/assets/projects/twitch.jpg'
-            projectUrl='/twitch'
-            tech='Next JS'
-
+            title='Project Y'
+            backgroundImg={LoadingImg}
+            projectUrl='/#projects'
+            description='Loading...'
           />
         </div>
       </div>

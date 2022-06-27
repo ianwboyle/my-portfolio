@@ -2,18 +2,32 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const ProjectItem = ({title, backgroundImg, tech, projectUrl}) => {
+const style = {
+  projectItemWrapper: 'relative flex flex-col items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-sm bg-[#FFF] group',
+  ImgContainer: 'p-4',
+  projectTitle: 'uppercase text-2xl tracking-wider text-center p-2',
+  projectDescription: 'pb-4 pt-2 text-center',
+  linkContainer: 'flex items-center w-full px-4 pb-8 pt-4',
+  moreInfo: 'uppercase text-center text-[#FFF] py-4 w-full rounded-sm font-bold bg-[#83E22b] text-sm cursor-pointer',
+}
+
+const ProjectItem = ({title, backgroundImg, description, projectUrl}) => {
   return (
-    <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
-    <Image className='rounded-xl group-hover:opacity-10' src={backgroundImg} alt='/' width={1000} height={700} /> 
-    <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-        <h3 className='text-2xl text-white tracking-wider text-center'>{title}</h3>
-        <p className='pb-4 pt-2 text-white text-center'>{tech}</p>
+    <div className={style.projectItemWrapper}>
+      <div className={style.ImgContainer}>
+        <Image 
+          src={backgroundImg} 
+          alt='/' width={1000} height={600} 
+        />
+      </div> 
+      <h3 className={style.projectTitle}>{title}</h3>
+      <p className={style.projectDescription}>{description}</p>
+      <div className={style.linkContainer}>
         <Link href={projectUrl}>
-            <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>More Info</p>
+          <p className={style.moreInfo}>{`Coming Soon`}</p>
         </Link>
+      </div>
     </div>
-  </div>
   )
 }
 
