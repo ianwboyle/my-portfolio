@@ -12,9 +12,9 @@ import navLogo from '../public/assets/navLogo.png';
 
 const style = {
   logoImg: 'hover:cursor-pointer',
-  navbarContainer: 'flex justify-between items-center w-full h-full px-2 2xl:px-16',
-  navbarLinkContainer: 'hidden md:flex',
-  navbarLink: 'ml-10 text-xl uppercase hover:text-[#12181B]',
+  navbarContainer: 'flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#FFF] dark:bg-[#2A2E35]',
+  navbarLinkContainer: 'hidden md:flex  ',
+  navbarLink: 'ml-10 text-xl uppercase text-[#454E56] hover:cursor-pointer hover:text-[#12181B] dark:text-[#B2BECD] dark:hover:text-[#F8F8F8]',
   menuOpenIcon:'md:hidden flex items-center justify-center',
   menuCloseIcon: 'rounded-full p-3',
   navMenuHeaderContainer: 'flex w-full items-center justify-between',
@@ -36,10 +36,6 @@ const style = {
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
-  const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#F8F8F8');
-  const [linkColor, setLinkColor] = useState('#454E56');
-  const router = useRouter();
   const {systemTheme, theme, setTheme} = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -64,41 +60,14 @@ const Navbar = () => {
     }
   }
 
-  useEffect(() => {
-    if (
-      router.asPath === '/property' ||
-      router.asPath === '/crypto' ||
-      router.asPath === '/netflix' ||
-      router.asPath === '/twitch'
-    ) {
-      setNavBg('transparent');
-      setLinkColor('#F8F8F8');
-    } else {
-      setNavBg('#F8F8F8');
-      setLinkColor('#454E56');
-    }
-  }, [router]);
-
   const toggleNav = () => {
     setNav(!nav);
   };
 
-  useEffect(() => {
-    const handleShadow = () => {
-      if (window.scrollY >= 90) {
-        setShadow(true);
-      } else {
-        setShadow(false);
-      }
-    };
-    window.addEventListener('scroll', handleShadow);
-  }, []);
-
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
       className={
-        shadow
+        nav
           ? 'fixed w-full h-14 md:h-20 shadow-xl z-[100] ease-in-out duration-300'
           : 'fixed w-full h-14 md:h-20 z-[100]'
       }
@@ -114,11 +83,11 @@ const Navbar = () => {
           />
         </Link>
         <div className='flex flex-row'>
-          <div className='flex items-center p-8 md:p-0 justify-center text-[#454E56] hover:cursor-pointer hover:text-[#12181B]'>
+          <div className='flex items-center p-8 md:p-0 justify-center text-[#454E56] hover:cursor-pointer hover:text-[#12181B] dark:text-[#B2BECD] dark:hover:text-[#F8F8F8]'>
               {renderThemeChanger()}
           </div>
           <div>
-            <ul style={{ color: `${linkColor}` }} className={style.navbarLinkContainer}>
+            <ul className={style.navbarLinkContainer}>
               <Link href='/'>
                 <li className={style.navbarLink}>{`Home`}</li>
               </Link>
@@ -134,7 +103,6 @@ const Navbar = () => {
             </ul>
           </div>
           <div 
-            style={{ color: `${linkColor}` }}
             onClick={toggleNav} 
             className={style.menuOpenIcon}
           >
