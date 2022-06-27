@@ -11,12 +11,13 @@ import { GrMail } from 'react-icons/gr'
 import navLogo from '../public/assets/navLogo.png';
 
 const style = {
-  logoImg: 'hover:cursor-pointer',
   navbarContainer: 'flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#FFF] dark:bg-[#2A2E35] ease-in duration-300',
+  navLogoContainer: 'md:p-4 lg:p-0',
+  logoImg: 'hover:cursor-pointer',
   navbarLinkContainer: 'hidden md:flex  ',
   navbarLink: 'ml-10 text-xl uppercase text-[#454E56] hover:cursor-pointer hover:text-[#12181B] dark:text-[#B2BECD] dark:hover:text-[#F8F8F8]',
-  menuOpenIcon:'md:hidden flex items-center justify-center',
-  menuCloseIcon: 'rounded-full p-3',
+  menuOpenIcon:'md:hidden flex items-center justify-center text-[#454E56] dark:text-[#B2BECD]',
+  menuCloseIcon: 'rounded-full p-3 text-[#454E56] dark:text-[#B2BECD]',
   navMenuHeaderContainer: 'flex w-full items-center justify-between',
   navMenuTaglineContainer: 'border-b border-gray-300 my-4',
   navMenuTagline: 'w-[85%] md:w-[90%] py-4',
@@ -73,19 +74,18 @@ const Navbar = () => {
       }
     >
       <div className={style.navbarContainer}>
-        <Link href='/'>
-          <Image
-            className={style.logoImg} 
-            src={navLogo} 
-            alt="/" 
-            width={50} 
-            height={50} 
-          />
-        </Link>
+        <div className={style.navLogoContainer}>
+          <Link href='/'>
+            <Image
+              className={style.logoImg} 
+              src={navLogo} 
+              alt="/" 
+              width={50} 
+              height={50} 
+            />
+          </Link>
+        </div>
         <div className='flex flex-row'>
-          <div className='flex items-center p-8 md:p-0 justify-center text-[#454E56] hover:cursor-pointer hover:text-[#12181B] dark:text-[#B2BECD] dark:hover:text-[#F8F8F8]'>
-              {renderThemeChanger()}
-          </div>
           <div>
             <ul className={style.navbarLinkContainer}>
               <Link href='/'>
@@ -101,6 +101,11 @@ const Navbar = () => {
                 <li className={style.navbarLink}>{`Projects`}</li>
               </Link>
             </ul>
+          </div>
+        </div>
+        <div className='flex flex-row'>
+          <div className='flex items-center p-6 justify-center text-[#454E56] hover:cursor-pointer hover:text-[#12181B] dark:text-[#B2BECD] dark:hover:text-[#F8F8F8]'>
+              {renderThemeChanger()}
           </div>
           <div 
             onClick={toggleNav} 
