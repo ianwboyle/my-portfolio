@@ -10,25 +10,25 @@ import FleekImg from '../public/assets/skills/fleek.png'
 
 const style = {
   mainWrapper: 'w-full h-screen text-center',
-  mainContainer: 'max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center',
-  headerText: 'py-2 text-gray-700',
+  mainContainer: 'max-w-[1240px] w-full h-full mx-auto p-2 pt-20 flex flex-col justify-center items-center',
+  headerText: 'py-2',
   focusText: 'uppercase py-4 text-sm font-semibold text-[#454E56] max-w-[80%] m-auto',
   spanText: 'text-[#8A2BE2]',
-  socialsContainer: 'flex items-center justify-between max-w-[330px] m-auto py-2',
+  socialsContainer: 'flex items-center justify-between max-w-[330px]',
   socialsIcon:'rounded-full p-3 hover:scale-110 ease-in duration-300',
   linkedIn: 'text-[#0072B1]',
   twitter: 'text-[#00ACEE]',
   mail: 'text-[#8A2BE2]',
   upWork: 'text-[#2BE22E]',
-  hostedContainer: 'flex flex-col items-center',
-  hosted: 'flex flex-col w-[150px] h-[150px] justify-center items-center'
+  hostedContainer: 'flex flex-col items-center justify-center',
+  hosted: 'flex flex-col w-[150px] h-[100px] justify-center items-center'
 }
 
 const Main = () => {
   return (
     <div className={style.mainWrapper}>
       <div className={style.mainContainer}>
-        <div>
+        <div className='flex flex-col items-center justify-center'>
           <h1 className={style.headerText}>
             {`Hi, I'm `}<span className={style.spanText}>{`Ian`}</span>
           </h1>
@@ -65,18 +65,18 @@ const Main = () => {
               </a>
             </div>
           </div>
-          <div className={style.hostedContainer}>
+        </div>
+        <div className={style.hostedContainer}>
             <div className={style.hosted}>
               <p>Deployed with Fleek</p>
               <Image
                 src={FleekImg}
-                width={50}
-                height={50}
+                width={25}
+                height={25}
                 alt='Fleek'
               />  
             </div>
-          </div>   
-        </div>
+          </div>
       </div>
     </div>
   )
