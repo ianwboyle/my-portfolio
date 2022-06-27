@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const style = {
-  projectItemWrapper: 'relative flex flex-col items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-sm bg-[#FFF] group',
+  projectItemWrapper: 'relative flex flex-col items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-sm bg-[#FFF] hover:scale-105 ease-in duration-300',
   ImgContainer: 'p-4',
   projectTitle: 'uppercase text-2xl tracking-wider text-center p-2',
   projectDescription: 'pb-4 pt-2 text-center',
