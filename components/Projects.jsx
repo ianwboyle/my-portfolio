@@ -3,7 +3,7 @@ import ProjectItem from './ProjectItem'
 import LoadingImg from '../public/assets/projects/loading.jpg'
 
 const style = {
-  projectsWrapper: 'w-full p-4',
+  projectsWrapper: 'w-full md:h-screen p-4',
   projectsContainer: 'max-w-[1240px] mx-auto px-2 py-16',
   projectsHeader: 'text-xl tracking-widest uppercase text-[#8A2BE2] dark:text-[#8A2BE2]',
   projectsSubHeader: 'py-4',

@@ -38,16 +38,16 @@ const About = () => {
             {`I believe smart contracts are set for mass adoption. They will soon be far more mainstream as people increasingly understand and gain confidence in blockchain technology.`}
           </p> 
           <p className={style.genericText}>
-            {`My goal is to build cross-chain dApps that generate a positive User Experience (UX), and produce a high-quality User Interface (UI), combined  smart contracts and blockchain technology.`}
+            {`My goal is to build cross-chain dApps that generate a positive User Experience (UX), and produce a high-quality User Interface (UI), combined with smart contracts and blockchain technology.`}
           </p>
           <p className={style.genericText}>
-            {` I design, build, and maintain efficient, reusable, and reliable code, which is supported on all Blockchains using the Ethereum protocol.`}
+            {`I design, build, and maintain efficient, reusable, and reliable code. My code is supported on all Blockchains using the Ethereum protocol.`}
           </p>
           <p className={style.taglineText}>
             {`Web1 was read-only // Web2 is read-write // Web3 shall be read-write-own`}
           </p>
           <Link href='/#projects'>
-            <p className={style.projectLink}>{`Check out some of my latest projects.`}</p>
+            <p className={style.projectLink}>{`Check out some of my latest projects...`}</p>
           </Link>
         </div>
       </div>
