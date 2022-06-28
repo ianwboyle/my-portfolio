@@ -35,7 +35,7 @@ const Main = () => {
             {`A Blockchain Developer`} 
           </h1>
           <p className={style.focusText}>
-            {`Smart Contracts | Digital Assets | Protocols | DApps`}
+            {`Smart Contracts | Digital Assets | `}
           </p>
           <div className={style.socialsContainer}>
             <div className={`${style.linkedIn} ${style.socialsIcon}`}>

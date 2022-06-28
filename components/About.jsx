@@ -10,7 +10,7 @@ const style = {
   avatarImgContainer: 'w-auto h-auto m-auto rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300',
   infoContainer: 'col-span-2 xl:w-full p-4',
   taglineText: 'uppercase text-sm tracking-widest text-gray-600 py-2',
-  projectLink: 'py-2 text-[#2BA3E2] dark:text-[#2BA3E2] underline cursor-pointer',
+  projectLink: 'py-2 text-[#2BA3E2] dark:text-[#2BA3E2] cursor-pointer',
   genericText: 'py-2',
   taglineText: 'py-2 uppercase',
 }
@@ -38,7 +38,7 @@ const About = () => {
             {`I believe smart contracts are set for mass adoption. They will soon be far more mainstream as people increasingly understand and gain confidence in blockchain technology.`}
           </p> 
           <p className={style.genericText}>
-            {`My goal is to build cross-chain dApps that generate a positive User Experience (UX), and produce a high-quality User Interface (UI), combined with smart contracts and blockchain technology.`}
+            {`Tinkering with the fusion of Smart Contracts, and Blockchain Technology, with modern, yet simplistic, UI/UX.`}
           </p>
           <p className={style.genericText}>
             {`I design, build, and maintain efficient, reusable, and reliable code. My code is supported on all Blockchains using the Ethereum protocol.`}
