@@ -12,9 +12,8 @@ import HardhatImg from '../public/assets/skills/hardhat.png'
 import RainbowKitImg from '../public/assets/skills/rainbowwallet.png'
 import ChainlinkImg from '../public/assets/skills/chainlink.png'
 import IPFSImg from '../public/assets/skills/ipfs.png'
-import LensImg from '../public/assets/skills/lens.png'
 import GraphImg from '../public/assets/skills/graph.png'
-import RadicleImg from '../public/assets/skills/radicle.png'
+
 
 const style = {
   skillsWrapper: 'w-full md:h-screen p-2 flex items-center py-16',
@@ -208,23 +207,6 @@ const Skills = () => {
               </div>
             </div>
           </a>
-          <a href='https://lens.xyz/' target='_blank' rel='noopener noreferrer'>
-            <div className={style.skillItemWrapper}>
-              <div className={style.skillItemContainer}>
-                <div className={style.skillImgContainer}>
-                  <Image 
-                    src={LensImg}
-                    alt='/' 
-                    width={50} 
-                    height={50} 
-                  />
-                </div>
-                <div className={style.skillTitle}>
-                  <h3>{`Lens Protocol`}</h3>
-                </div>
-              </div>
-            </div>
-          </a>
           <a href='https://ipfs.io/' target='_blank' rel='noopener noreferrer'>
             <div className={style.skillItemWrapper}>
               <div className={style.skillItemContainer}>
@@ -272,23 +254,6 @@ const Skills = () => {
                 </div>
                 <div className={style.skillTitle}>
                   <h3>{`Fleek`}</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href='https://radicle.xyz/' target='_blank' rel='noopener noreferrer'>
-            <div className={style.skillItemWrapper}>
-              <div className={style.skillItemContainer}>
-                <div className={style.skillImgContainer}>
-                  <Image 
-                    src={RadicleImg}
-                    alt='/' 
-                    width={50} 
-                    height={50} 
-                  />
-                </div>
-                <div className={style.skillTitle}>
-                  <h3>{`Radicle`}</h3>
                 </div>
               </div>
             </div>

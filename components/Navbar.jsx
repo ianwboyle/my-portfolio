@@ -148,7 +148,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className={style.navMenuTaglineContainer}>
-            <p className={style.navMenuTagline}>{`Let's build something legendary together.`}</p>
+            <p className={style.navMenuTagline}>{`Let's build the future together.`}</p>
           </div>
         </div>
         <div className={style.navMenuLinkContainer}>

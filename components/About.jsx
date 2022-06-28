@@ -7,12 +7,14 @@ const style = {
   aboutWrapper: 'w-full md:h-screen p-2 flex items-center py-16',
   aboutContainer: 'max-w-[1240px] m-auto flex flex-col xl:flex-row gap-8',
   aboutHeader: 'uppercase text-xl tracking-widest text-[#8A2BE2] dark:text-[#8A2BE2]',
-  avatarImgContainer: 'w-auto h-auto m-auto rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300',
+  avatarImgContainer: 'w-auto h-auto m-auto rounded-xl flex items-center justify-center p-4',
   infoContainer: 'col-span-2 xl:w-full p-4',
-  taglineText: 'uppercase text-sm tracking-widest text-gray-600 py-2',
-  projectLink: 'py-2 text-[#2BA3E2] dark:text-[#2BA3E2] cursor-pointer',
+  taglineText: 'uppercase text-sm py-2',
+  roleHeader: 'uppercase text-lg tracking-widest pt-4',
+  projectLink: 'py-2 text-[#2BA3E2] hover:text-[#2B83E2] dark:text-[#2BA3E2] dark:hover:hover:text-[#2B83E2] cursor-pointer',
   genericText: 'py-2',
   taglineText: 'py-2 uppercase',
+  taglineFooter: 'uppercase text-lg py-2 text-[#12181B] dark:text-[#FFF]'
 }
 
 const About = () => {
@@ -30,22 +32,19 @@ const About = () => {
         <div className={style.infoContainer}>
           <p className={style.aboutHeader}>{`About`}</p>
           <h2 className={style.genericText}>{`My Vision`}</h2>
-          <p className={style.taglineText}>{"// Radical Technology & Innovative Design "}</p>
-          <p className={style.genericText}>
-            {`Dedicated to onboarding the next wave of digital citizens into the wild & wonderful world of Web3!`}
+          <p className={style.taglineText}>{"// Welcome to the Digital Industrial Revolution"}</p>
+          <p className={style.taglineFooter}>
+              {`True Ownership = Proof of Ownership + Transferability of Ownership`}
           </p>
           <p className={style.genericText}>
-            {`I believe smart contracts are set for mass adoption. They will soon be far more mainstream as people increasingly understand and gain confidence in blockchain technology.`}
+              {`Web3 enables true ownership of Digital Assets. The adoption of this technology is radically changing the way we interact with the world. I design, build, and maintain efficient, reusable, and reliable Smart Contracts that will help shape our digital future.`}
+          </p>
+          <p className={style.genericText}>
+              {`I am a builder. Soemone who can iterate and ship fast, while keeping UX a top priority. Being pixel perfect is in my DNA, ensuring a high quality user experience for all my builds.`}
           </p> 
           <p className={style.genericText}>
-            {`Tinkering with the fusion of Smart Contracts, and Blockchain Technology, with modern, yet simplistic, UI/UX.`}
-          </p>
-          <p className={style.genericText}>
-            {`I design, build, and maintain efficient, reusable, and reliable code. My code is supported on all Blockchains using the Ethereum protocol.`}
-          </p>
-          <p className={style.taglineText}>
-            {`Web1 was read-only // Web2 is read-write // Web3 shall be read-write-own`}
-          </p>
+              {`Let's build the future together.`}
+          </p> 
           <Link href='/#projects'>
             <p className={style.projectLink}>{`Check out some of my latest projects...`}</p>
           </Link>

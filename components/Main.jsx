@@ -9,6 +9,7 @@ import FleekImg from '../public/assets/skills/fleek.png'
 const style = {
   mainWrapper: 'w-full h-screen text-center',
   mainContainer: 'max-w-[1240px] w-full h-full mx-auto p-2 pt-20 flex flex-col justify-center items-center',
+  mainTagline: 'text-md py-4 font-bold',
   headerText: 'py-2',
   focusText: 'uppercase py-4 text-sm font-semibold text-[#454E56] max-w-[80%] m-auto',
   spanText: 'text-[#8A2BE2]',
@@ -28,6 +29,7 @@ const Main = () => {
     <div className={style.mainWrapper}>
       <div className={style.mainContainer}>
         <div className='flex flex-col items-center justify-center'>
+          <p className={style.mainTagline}>{`RADICAL TECHNOLOGY & INNOVATIVE DESIGN`}</p>
           <h1 className={style.headerText}>
             {`Hi, I'm `}<span className={style.spanText}>{`Ian`}</span>
           </h1>
@@ -35,7 +37,7 @@ const Main = () => {
             {`A Blockchain Developer`} 
           </h1>
           <p className={style.focusText}>
-            {`Smart Contracts | Digital Assets | `}
+            {`Smart Contracts | Digital Assets | UI/UX`}
           </p>
           <div className={style.socialsContainer}>
             <div className={`${style.linkedIn} ${style.socialsIcon}`}>
