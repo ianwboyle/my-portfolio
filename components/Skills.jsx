@@ -105,23 +105,6 @@ const Skills = () => {
               </div>
             </div>
           </a>
-          <a href='https://reactjs.org/' target='_blank' rel='noopener noreferrer'>
-            <div className={style.skillItemWrapper}>
-              <div className={style.skillItemContainer}>
-                <div className={style.skillImgContainer}>
-                  <Image 
-                    src={ReactImg}
-                    alt='/' 
-                    width={50} 
-                    height={50} 
-                  />
-                </div>
-                <div className={style.skillTitle}>
-                  <h3>{`React.js`}</h3>
-                </div>
-              </div>
-            </div>
-          </a>
           <a href='https://nextjs.org/' target='_blank' rel='noopener noreferrer'>
             <div className={style.skillItemWrapper}>
               <div className={style.skillItemContainer}>
@@ -169,91 +152,6 @@ const Skills = () => {
                 </div>
                 <div className={style.skillTitle}>
                   <h3>{`Tailwind CSS`}</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href='https://chain.link/' target='_blank' rel='noopener noreferrer'>
-            <div className={style.skillItemWrapper}>
-              <div className={style.skillItemContainer}>
-                <div className={style.skillImgContainer}>
-                  <Image 
-                    src={ChainlinkImg}
-                    alt='/' 
-                    width={50} 
-                    height={50} 
-                  />
-                </div>
-                <div className={style.skillTitle}>
-                  <h3>{`Chainlink`}</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href='https://thegraph.com/en/' target='_blank' rel='noopener noreferrer'>
-            <div className={style.skillItemWrapper}>
-              <div className={style.skillItemContainer}>
-                <div className={style.skillImgContainer}>
-                  <Image 
-                    src={GraphImg}
-                    alt='/' 
-                    width={50} 
-                    height={50} 
-                  />
-                </div>
-                <div className={style.skillTitle}>
-                  <h3>{`The Graph`}</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href='https://ipfs.io/' target='_blank' rel='noopener noreferrer'>
-            <div className={style.skillItemWrapper}>
-              <div className={style.skillItemContainer}>
-                <div className={style.skillImgContainer}>
-                  <Image 
-                    src={IPFSImg}
-                    alt='/' 
-                    width={50} 
-                    height={50} 
-                  />
-                </div>
-                <div className={style.skillTitle}>
-                  <h3>{`IPFS`}</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href='https://www.rainbowkit.com/' target='_blank' rel='noopener noreferrer'>
-            <div className={style.skillItemWrapper}>
-              <div className={style.skillItemContainer}>
-                <div className={style.skillImgContainer}>
-                  <Image 
-                    src={RainbowKitImg}
-                    alt='/' 
-                    width={50} 
-                    height={50} 
-                  />
-                </div>
-                <div className={style.skillTitle}>
-                  <h3>{`RainbowKit`}</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href='https://fleek.co/' target='_blank' rel='noopener noreferrer'>
-            <div className={style.skillItemWrapper}>
-              <div className={style.skillItemContainer}>
-                <div className={style.skillImgContainer}>
-                  <Image 
-                    src={FleekImg}
-                    alt='/' 
-                    width={50} 
-                    height={50} 
-                  />
-                </div>
-                <div className={style.skillTitle}>
-                  <h3>{`Fleek`}</h3>
                 </div>
               </div>
             </div>
