@@ -3,16 +3,11 @@ import Image from 'next/image'
 import SolidityImg from '../public/assets/skills/solidity.png'
 import NextJSImg from '../public/assets/skills/nextjs.png'
 import JavaScriptImg from '../public/assets/skills/javascript.png'
-import ReactImg from '../public/assets/skills/react.png'
 import TailwindImg from '../public/assets/skills/tailwind.png'
 import GunJSImg from '../public/assets/skills/gunjs.png'
-import FleekImg from '../public/assets/skills/fleek.png'
 import EthersJSImg from '../public/assets/skills/ethersjs.png'
 import HardhatImg from '../public/assets/skills/hardhat.png'
-import RainbowKitImg from '../public/assets/skills/rainbowwallet.png'
-import ChainlinkImg from '../public/assets/skills/chainlink.png'
-import IPFSImg from '../public/assets/skills/ipfs.png'
-import GraphImg from '../public/assets/skills/graph.png'
+
 
 
 const style = {
@@ -158,7 +153,7 @@ const Skills = () => {
           </a>
         </div>
       </div>
-    </div>
+    </div> 
   )
 }
 
