@@ -8,7 +8,7 @@ const style = {
   projectTitle: 'uppercase text-2xl tracking-wider text-center p-2',
   projectDescription: 'pb-4 pt-2 text-center',
   linkContainer: 'flex items-center w-full px-4 pb-8 pt-4',
-  moreInfo: 'uppercase text-center text-[#FFF] dark:text-[#FFF] py-4 w-full rounded-sm font-bold bg-[#83E22b] text-sm cursor-pointer',
+  moreInfo: 'uppercase text-center text-black dark:text-black py-4 w-full rounded-sm font-bold bg-[#83E22b] text-md cursor-pointer',
 }
 
 const ProjectItem = ({title, backgroundImg, description, projectUrl}) => {
@@ -17,14 +17,14 @@ const ProjectItem = ({title, backgroundImg, description, projectUrl}) => {
       <div className={style.ImgContainer}>
         <Image 
           src={backgroundImg} 
-          alt='/' width={1000} height={600} 
+          alt='/' width={600} height={500} 
         />
       </div> 
       <h3 className={style.projectTitle}>{title}</h3>
       <p className={style.projectDescription}>{description}</p>
       <div className={style.linkContainer}>
         <Link href={projectUrl}>
-          <p className={style.moreInfo}>{`Coming Soon`}</p>
+          <p className={style.moreInfo}>{`SEE PROJECT`}</p>
         </Link>
       </div>
     </div>

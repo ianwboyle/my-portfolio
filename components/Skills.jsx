@@ -3,10 +3,10 @@ import Image from 'next/image'
 import SolidityImg from '../public/assets/skills/solidity.png'
 import NextJSImg from '../public/assets/skills/nextjs.png'
 import JavaScriptImg from '../public/assets/skills/javascript.png'
+import TypeScriptImg from '../public/assets/skills/typescript.png'
 import TailwindImg from '../public/assets/skills/tailwind.png'
-import GunJSImg from '../public/assets/skills/gunjs.png'
 import EthersJSImg from '../public/assets/skills/ethersjs.png'
-import HardhatImg from '../public/assets/skills/hardhat.png'
+
 
 
 
@@ -49,19 +49,36 @@ const Skills = () => {
               </div>
             </div>
           </a>
-          <a href='https://hardhat.org/' target='_blank' rel='noopener noreferrer'>
+          <a href='https://nextjs.org/' target='_blank' rel='noopener noreferrer'>
             <div className={style.skillItemWrapper}>
               <div className={style.skillItemContainer}>
                 <div className={style.skillImgContainer}>
                   <Image 
-                    src={HardhatImg}
+                    src={NextJSImg}
                     alt='/' 
-                    width={70} 
+                    width={50} 
                     height={50} 
                   />
                 </div>
                 <div className={style.skillTitle}>
-                  <h3>{`Hardhat`}</h3>
+                  <h3>{`Next.js`}</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href='https://tailwindcss.com/' target='_blank' rel='noopener noreferrer'>
+            <div className={style.skillItemWrapper}>
+              <div className={style.skillItemContainer}>
+                <div className={style.skillImgContainer}>
+                  <Image 
+                    src={TailwindImg}
+                    alt='/' 
+                    width={50} 
+                    height={50} 
+                  />
+                </div>
+                <div className={style.skillTitle}>
+                  <h3>{`Tailwind CSS`}</h3>
                 </div>
               </div>
             </div>
@@ -83,6 +100,23 @@ const Skills = () => {
               </div>
             </div>
           </a>
+          <a href='https://www.typescriptlang.org/' target='_blank' rel='noopener noreferrer'>
+            <div className={style.skillItemWrapper}>
+              <div className={style.skillItemContainer}>
+                <div className={style.skillImgContainer}>
+                  <Image 
+                    src={TypeScriptImg}
+                    alt='/' 
+                    width={50} 
+                    height={50} 
+                  />
+                </div>
+                <div className={style.skillTitle}>
+                  <h3>{`TypeScript`}</h3>
+                </div>
+              </div>
+            </div>
+          </a>
           <a href='https://docs.ethers.io/v5/' target='_blank' rel='noopener noreferrer'>
             <div className={style.skillItemWrapper}>
               <div className={style.skillItemContainer}>
@@ -96,57 +130,6 @@ const Skills = () => {
                 </div>
                 <div className={style.skillTitle}>
                   <h3>{`Ethers.js`}</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href='https://nextjs.org/' target='_blank' rel='noopener noreferrer'>
-            <div className={style.skillItemWrapper}>
-              <div className={style.skillItemContainer}>
-                <div className={style.skillImgContainer}>
-                  <Image 
-                    src={NextJSImg}
-                    alt='/' 
-                    width={50} 
-                    height={50} 
-                  />
-                </div>
-                <div className={style.skillTitle}>
-                  <h3>{`Next.js`}</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href='https://gun.eco/' target='_blank' rel='noopener noreferrer'> 
-            <div className={style.skillItemWrapper}>
-              <div className={style.skillItemContainer}>
-                <div className={style.skillImgContainer}>
-                  <Image 
-                    src={GunJSImg}
-                    alt='/' 
-                    width={50} 
-                    height={50} 
-                  />
-                </div>
-                <div className={style.skillTitle}>
-                  <h3>{`Gun.js`}</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href='https://tailwindcss.com/' target='_blank' rel='noopener noreferrer'>
-            <div className={style.skillItemWrapper}>
-              <div className={style.skillItemContainer}>
-                <div className={style.skillImgContainer}>
-                  <Image 
-                    src={TailwindImg}
-                    alt='/' 
-                    width={50} 
-                    height={50} 
-                  />
-                </div>
-                <div className={style.skillTitle}>
-                  <h3>{`Tailwind CSS`}</h3>
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
 import LoadingImg from '../public/assets/projects/loading.jpg'
+import MintingDappImg from '../public/assets/projects/mintingdapp.png'
 
 const style = {
   projectsWrapper: 'w-full md:h-screen p-4',
@@ -23,10 +24,10 @@ const Projects = () => {
         </h2>
         <div className={style.projectsItemContainer}>
           <ProjectItem
-            title={`Project X`}
-            backgroundImg={LoadingImg}
-            projectUrl='/#projects'
-            description={`Loading...`}
+            title={`NFT Drop Minting dApp`}
+            backgroundImg={MintingDappImg}
+            projectUrl='/mintingdapp'
+            description={`Connect your wallet and mint NFTs with this minting dApp developed on the Goerli Testnet.`}
           />
           <ProjectItem
             title={`Project Y`}
