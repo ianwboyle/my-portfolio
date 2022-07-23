@@ -50,7 +50,7 @@
   }
 
   button {
-    @apply shadow-xl uppercase bg-gradient-to-r from-[#55e5c1] to-[#ff74ec] text-white font-bold
+    @apply shadow-xl uppercase rounded-md bg-gradient-to-r from-[#55e5c1] to-[#ff74ec] text-white font-bold
   }
 
 }

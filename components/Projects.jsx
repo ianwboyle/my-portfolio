@@ -1,14 +1,14 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
-import LoadingImg from '../public/assets/projects/loading.jpg'
-import MintingDappImg from '../public/assets/projects/mintingdapp.png'
+import CoffeeImg from '../public/assets/projects/coffee.jpg'
+import MintingImg from '../public/assets/projects/minting.png'
 
 const style = {
   projectsWrapper: 'w-full md:h-screen p-4',
   projectsContainer: 'max-w-[1240px] mx-auto px-2 py-16',
   projectsHeader: 'text-xl tracking-widest uppercase text-[#8A2BE2] dark:text-[#8A2BE2]',
   projectsSubHeader: 'py-4',
-  projectsItemContainer: 'grid md:grid-cols-2 gap-8'
+  projectsItemContainer: 'grid md:grid-cols-4 gap-8'
 
 }
 
@@ -24,16 +24,16 @@ const Projects = () => {
         </h2>
         <div className={style.projectsItemContainer}>
           <ProjectItem
-            title={`NFT Drop Minting dApp`}
-            backgroundImg={MintingDappImg}
-            projectUrl='/mintingdapp'
+            title={`NFT Minting Site (dApp)`}
+            backgroundImg={MintingImg}
+            projectUrl='/minter'
             description={`Connect your wallet and mint NFTs with this minting dApp developed on the Goerli Testnet.`}
           />
           <ProjectItem
-            title={`Project Y`}
-            backgroundImg={LoadingImg}
-            projectUrl='/#projects'
-            description={`Loading...`}
+            title={`Buy Me A Coffee (dApp)`}
+            backgroundImg={CoffeeImg}
+            projectUrl='/buymeacoffee'
+            description={`Decentralized "Buy Me a Coffee" that allows visitors to send you ETH as tips and leave nice messages.`}
           />
         </div>
       </div>
