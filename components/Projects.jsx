@@ -4,7 +4,7 @@ import CoffeeImg from '../public/assets/projects/coffee.jpg'
 import MintingImg from '../public/assets/projects/minting.png'
 
 const style = {
-  projectsWrapper: 'w-full md:h-screen p-4',
+  projectsWrapper: 'w-full md:h-screen p-4 md:pt-10',
   projectsContainer: 'max-w-[1240px] mx-auto px-2 py-16',
   projectsHeader: 'text-xl tracking-widest uppercase text-[#8A2BE2] dark:text-[#8A2BE2]',
   projectsSubHeader: 'py-4',
