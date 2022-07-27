@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { RiRadioButtonFill } from 'react-icons/ri';
-import NFTImg from '../public/assets/projects/nft.jpg';
+import NFTImg from '../public/assets/projects/mintingdappbanner.jpg';
 
 const minter = () => {
   return (
@@ -46,21 +46,21 @@ const minter = () => {
         </div>
         <div className='col-span-4 md:col-span-1 py-4'>
           <div className='p-2'>
-            <p className='text-center font-bold pb-2'>{"Technologies"}</p>
+            <p className='text-center font-bold'>{"Technologies"}</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
-              <p className='text-gray-600 py-2 flex items-center'>
+              <p className='text-gray-600 pt-2 pb-1 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> {"Solidity"}
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
+              <p className='text-gray-600 py-1 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> {"Ethers"}
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
+              <p className='text-gray-600 py-1 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> {"NextJS"}
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
+              <p className='text-gray-600 py-1 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> {"TypeScript"}
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
+              <p className='text-gray-600 pt-1 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> {"Tailwind CSS"}
               </p>
             </div>

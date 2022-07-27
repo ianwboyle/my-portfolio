@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectItem from './ProjectItem'
 import CoffeeImg from '../public/assets/projects/coffee.jpg'
 import MintingImg from '../public/assets/projects/minting.png'
+import ChainBattleImg from '../public/assets/projects/chainbattle.png'
 
 const style = {
   projectsWrapper: 'w-full md:h-screen p-4 md:pt-10',
@@ -34,6 +35,12 @@ const Projects = () => {
             backgroundImg={CoffeeImg}
             projectUrl='/buymeacoffee'
             description={`Decentralized "Buy Me a Coffee" that allows visitors to send you ETH as tips and leave nice messages.`}
+          />
+          <ProjectItem
+            title={`Chain Battle (NFT)`}
+            backgroundImg={ChainBattleImg}
+            projectUrl='/chainbattle'
+            description={`Dynamic SVG NFT with on-chain metadata that changes based on your interactions.`}
           />
         </div>
       </div>

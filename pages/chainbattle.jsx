@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { RiRadioButtonFill } from 'react-icons/ri';
-import CoffeeImg from '../public/assets/projects/buymeacoffeebanner.jpg';
+import CBBImg from '../public/assets/projects/chainbattlebanner.png';
 
 const minter = () => {
   return (
@@ -13,12 +13,12 @@ const minter = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src={CoffeeImg}
+          src={CBBImg}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>{"Buy Me A Coffee (dApp)"}</h2>
-          <h3>{"Solidity / JavaScript / Next.js / Alchemy"}</h3>
+          <h2 className='py-2'>{"Chain Battle (NFT)"}</h2>
+          <h3>{"Solidity"}</h3>
         </div>
       </div>
 
@@ -27,41 +27,29 @@ const minter = () => {
           <p>{"Project"}</p>
           <h2>{"Overview"}</h2>
           <p>
-          {`Buy Me A Coffee is a popular website that creators, educators, entertainers, and all kinds of people use to create a landing page where anyone can send some amount of money as a thank you for their services. This dApp is a a decentralized "Buy Me a Coffee" smart contract that allows visitors to send you ETH as tips and leave nice messages, using Alchemy, Hardhat, Ethers.js, and Ethereum Goerli.`}
+          {"This is the basics to a blockchain game. It is a fully dynamic NFT with on-chain metadata that changes based on your interactions with it, and deployed on Polygon Mumbai to lower gas fees. You can train this NFT to battle other NFTs and earn rewards."}
           </p>
           <a
-            href='https://github.com/ianwboyle/BuyMeACoffee-Website'
+            href='https://github.com/ianwboyle/Chain-Battles'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>{"Code"}</button>
           </a>
           <a
-            href='https://buy-me-a-coffee-app.vercel.app/'
+            href='https://testnets.opensea.io/assets/mumbai/0xe784439ece59917ed28081c1365a20cd2fbb9ac1/1/'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4'>{"Demo"}</button>
           </a>
         </div>
-        <div className='col-span-4 md:col-span-1 py-2'>
+        <div className='col-span-4 md:col-span-1 py-4'>
           <div className='p-2'>
-            <p className='text-center font-bold'>{"Technologies"}</p>
+            <p className='text-center font-bold pb-2'>{"Technologies"}</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
-              <p className='text-gray-600 pt-2 pb-1 flex items-center'>
+              <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> {"Solidity"}
-              </p>
-              <p className='text-gray-600 py-1 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> {"Ethers"}
-              </p>
-              <p className='text-gray-600 py-1 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> {"NextJS"}
-              </p>
-              <p className='text-gray-600 py-1 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> {"JavaScript"}
-              </p>
-              <p className='text-gray-600 py-1 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> {"Alchemy"}
               </p>
             </div>
           </div>
