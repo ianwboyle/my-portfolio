@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { RiRadioButtonFill } from 'react-icons/ri';
-import NFTImg from '../public/assets/projects/mintingdappbanner.jpg';
+import NFTImg from '../public/assets/projects/mintingbanner.png';
 
 const minter = () => {
   return (
@@ -17,8 +17,8 @@ const minter = () => {
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>{"NFT Minting Site (dApp)"}</h2>
-          <h3>{"Solidity / Next JS / Typescript / Tailwind CSS"}</h3>
+          <h2 className='py-2 text-white dark:text-white'>{"NFT Minting Site (dApp)"}</h2>
+          <h3 className='text-white dark:text-white'>{"Solidity / TypeScript / NextJS / Tailwind CSS"}</h3>
         </div>
       </div>
 
@@ -27,7 +27,7 @@ const minter = () => {
           <p>{"Project"}</p>
           <h2>{"Overview"}</h2>
           <p>
-          {"This is a simple UI (user interface) where you can mint an NFT or digital creation. This app mints a collection that are deployed on the Goerli Test Network. Use MetaMask Wallet authentication to sign in to mint."}
+          {"This is a simple user interface where you can mint an NFT or digital creation. This app mints from a collection that is deployed on the Ethereum Goerli Test Network. Use MetaMask Wallet authentication to sign in to mint."}
           </p>
           <a
             href='https://github.com/ianwboyle/minting-dapp/tree/master'

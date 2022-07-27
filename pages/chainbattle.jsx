@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { RiRadioButtonFill } from 'react-icons/ri';
-import CBBImg from '../public/assets/projects/chainbattlebanner.png';
+import CBBImg from '../public/assets/projects/chainbattlebanner.jpg';
 
 const minter = () => {
   return (
@@ -17,8 +17,8 @@ const minter = () => {
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>{"Chain Battle (NFT)"}</h2>
-          <h3>{"Solidity"}</h3>
+          <h2 className='py-2 text-white dark:text-white'>{"Chain Battle (NFT)"}</h2>
+          <h3 className='text-white dark:text-white'>{"Solidity"}</h3>
         </div>
       </div>
 

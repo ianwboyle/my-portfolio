@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <Head>
         <title>{"IΛN | Blockchain Developer"}</title>
-        <meta name="description" content={"TRUE OWNERSHIP = PROOF OF OWNERSHIP + TRANSFERABILITY OF OWNERSHIP"} />
+        <meta name="description" content={"Welcome to the portfolio of ianwboyle.eth, a Full Stack Blockchain Developer. A showcase of current and past projects."} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />

@@ -34,7 +34,7 @@ const About = () => {
           <h2 className={style.genericText}>{`My Vision`}</h2>
           <p className={style.taglineText}>{"// Welcome to the Digital Industrial Revolution"}</p>
           <p className={style.taglineFooter}>
-              {`True Ownership = Proof of Ownership + Transferability of Ownership`}
+              {`READ // WRITE // OWN // AGREE // PROTECT`}
           </p>
           <p className={style.genericText}>
               {`Web3 enables true ownership of Digital Assets. The adoption of this technology is radically changing the way we interact with the world. I design, build, and maintain efficient, reusable, and reliable Smart Contracts that will help shape our digital future.`}
