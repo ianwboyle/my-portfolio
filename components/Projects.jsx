@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
 import BMACImg from '../public/assets/projects/buymeacoffee.jpg'
+import CBImg from '../public/assets/projects/chainbattle.jpg'
 
 
 const style = {
@@ -29,6 +30,13 @@ const Projects = () => {
             githubUrl='https://github.com/ianwboyle/BuyMeACoffee-Website'
             demoUrl='https://buy-me-a-coffee-app.vercel.app/'
             description={`Smart contract that allows visitors to send you MATIC as a tip and leave nice messages.`}
+          />
+          <ProjectItem
+            title={`Chain Battle`}
+            backgroundImg={CBImg}
+            githubUrl='https://github.com/ianwboyle/Chain-Battles'
+            demoUrl='https://testnets.opensea.io/assets/mumbai/0xe784439ece59917ed28081c1365a20cd2fbb9ac1/1'
+            description={`Fully dynamic NFT with on-chain metadata that changes based on your interactions with it.`}
           />
         </div>
       </div>
