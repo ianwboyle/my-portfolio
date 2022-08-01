@@ -1,7 +1,6 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
-import MintingImg from '../public/assets/projects/minting.png'
-import ChainBattleImg from '../public/assets/projects/chainbattle.png'
+import BMACImg from '../public/assets/projects/buymeacoffee.jpg'
 
 
 const style = {
@@ -9,7 +8,7 @@ const style = {
   projectsContainer: 'max-w-[1240px] mx-auto px-2 py-16',
   projectsHeader: 'text-xl tracking-widest uppercase text-[#8A2BE2] dark:text-[#8A2BE2]',
   projectsSubHeader: 'py-4',
-  projectsItemContainer: 'grid md:grid-cols-4 gap-8'
+  projectsItemContainer: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'
 
 }
 
@@ -25,16 +24,11 @@ const Projects = () => {
         </h2>
         <div className={style.projectsItemContainer}>
           <ProjectItem
-            title={`NFT Minting Site`}
-            backgroundImg={MintingImg}
-            projectUrl='/minter'
-            description={`Connect your wallet and mint NFTs with this minting dApp developed on the Goerli Testnet.`}
-          />
-          <ProjectItem
-            title={`NFT Chain Battle`}
-            backgroundImg={ChainBattleImg}
-            projectUrl='/chainbattle'
-            description={`Dynamic SVG NFT with on-chain metadata that changes based on your interactions.`}
+            title={`Buy Me A Coffee`}
+            backgroundImg={BMACImg}
+            githubUrl='https://github.com/ianwboyle/BuyMeACoffee-Website'
+            demoUrl='https://buy-me-a-coffee-app.vercel.app/'
+            description={`Smart contract that allows visitors to send you MATIC as a tip and leave nice messages.`}
           />
         </div>
       </div>

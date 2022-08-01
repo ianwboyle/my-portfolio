@@ -15,7 +15,7 @@ const style = {
   navLogoContainer: 'md:p-4 lg:p-0',
   logoImg: 'hover:cursor-pointer',
   navbarLinkContainer: 'hidden md:flex  ',
-  navbarLink: 'ml-10 text-xl uppercase text-[#454E56] hover:cursor-pointer hover:text-[#12181B] dark:text-[#B2BECD] dark:hover:text-[#F8F8F8]',
+  navbarLink: 'ml-10 text-lg uppercase text-[#454E56] hover:cursor-pointer hover:text-[#12181B] dark:text-[#B2BECD] dark:hover:text-[#F8F8F8]',
   menuOpenIcon:'md:hidden flex items-center justify-center text-[#454E56] dark:text-[#B2BECD]',
   menuCloseIcon: 'rounded-full p-3 text-[#454E56] dark:text-[#B2BECD]',
   navMenuHeaderContainer: 'flex w-full items-center justify-between',

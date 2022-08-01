@@ -32,15 +32,15 @@ const About = () => {
         <div className={style.infoContainer}>
           <p className={style.aboutHeader}>{`About`}</p>
           <h2 className={style.genericText}>{`My Vision`}</h2>
-          <p className={style.taglineText}>{"// Welcome to the Digital Industrial Revolution"}</p>
+          <p className={style.taglineText}>{"// RADICAL TECHNOLOGY & INNOVATIVE DESIGN"}</p>
           <p className={style.taglineFooter}>
               {`READ // WRITE // OWN // AGREE // PROTECT`}
           </p>
           <p className={style.genericText}>
-              {`Web3 enables true ownership of Digital Assets. The adoption of this technology is radically changing the way we interact with the world. I design, build, and maintain efficient, reusable, and reliable Smart Contracts that will help shape our digital future.`}
+              {`I am passionate about smart contracts and the blockchain. This technology is changing the way we interact with our world and I am excited to be a part of the future.`}
           </p>
           <p className={style.genericText}>
-              {`I am a builder. Soemone who can iterate and ship fast, while keeping UX a top priority. Being pixel perfect is in my DNA, ensuring a high quality user experience for all my builds.`}
+              {`Whether it's DeFi, NFTs, Digital Identity, or any other smart contract use case, I can help you build a beautiful, user-friendly application.`}
           </p> 
           <p className={style.genericText}>
               {`Let's build the future together.`}
